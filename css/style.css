@@ -66,7 +66,7 @@ body{
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation-name: loadingCircle;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
 }
@@ -81,7 +81,7 @@ body{
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation-name: loadingLine;
-    animation-delay: .75s;
+    animation-delay: 1s;
     animation-duration: 5s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
