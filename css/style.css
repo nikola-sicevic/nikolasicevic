@@ -1,0 +1,35 @@
+/* || FONTS */
+
+@font-face {
+    font-family: Questrial;
+    src: url(../fonts/Questrial-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+/* || VARIABLES */
+
+:root{
+    /* colors */
+    --black: #000000;
+    --black-light: #070d0b;
+    --white: #ffffff;
+    --gray: #aebab6;
+    --green-darker: #40725f;
+    --green-dark: #4a9881;
+    --green-lighter: #65bea4;
+    --green-light: #79ebc9;
+    /* fonts */
+    --poppins: "Poppins", Arial, Helvetica, sans-serif;
+    --questrial: "Questrial", Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* || LOADING PAGE */
