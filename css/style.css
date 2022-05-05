@@ -26,6 +26,8 @@
     /* fonts */
     --poppins: "Poppins", Arial, Helvetica, sans-serif;
     --questrial: "Questrial", Arial, Helvetica, sans-serif;
+    /* units */
+    --url-bar-heigth: -32px;
 }
 
 /* || GLOBAL STYLES */
@@ -51,9 +53,10 @@ ul{
 
 .btn{
     box-sizing: border-box;
-    padding: 18px 24px !important;
+    padding: 13px 31px !important;
     border-radius: 15px;
     font-size: 16px !important;
+    line-height: 16px;
 }
 
 .btn-transparent{
@@ -98,6 +101,10 @@ ul{
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
+}
+
+#loading svg{
+    transform: translateY(var(--url-bar-heigth));
 }
 
 @keyframes removeLoadingScreen {
@@ -211,17 +218,18 @@ header{
 }
 
 #menu ul{
+    transform: translateY(var(--url-bar-heigth));
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #menu ul li:last-child{
-    margin-top: 65px;
+    margin-top: 55px;
 }
 
 #menu ul li a{
-    padding: 15px 0;
+    padding: 10px 0;
     font-size: 28px;
 }
 
