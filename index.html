@@ -1,32 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Nikola Sicevic | Portfolio</title>
+    <title>Nikola Sicevic | Full-stack Web Developer</title>
 
     <!-- Meta -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nikola Sicevic Portfolio">
-    <meta name="keywords" content="full stack, web development, project management, web, software, development, frontend, backend, project, portfolio, web developer">
+    <meta name="description" content="Nikola Sicevic Full-stack Web Developer Portfolio">
+    <meta name="keywords" content="nikola sicevic, full stack, web development, project management, web, software, development, frontend, backend, project, portfolio, web developer">
     <meta name="author" content="Nikola Sicevic">
 
     <!-- Set image when website is shared on social media -->
-    <meta property="og:image" content="img/logo.png">
+    <meta property="og:image" content="img/logos/logo.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="178">
     <meta property="og:image:height" content="58">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="img/logos/favicon.ico">
 
     <!-- Link to CSS -->
-    <link rel="stylesheet" href="css/comingsoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/app.js"></script>
 </head>
 <body>
+    <!-- Loading screen -->
+    <div id="loading">
+        <svg width="136" height="136" viewBox="0 0 136 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle 
+                class="loading-circle"
+                cx="68" 
+                cy="68" 
+                r="60.05" 
+                stroke="#40725F" 
+                stroke-width="4" 
+                fill-opacity="0"  
+            />
+
+            <path 
+                class="loading-line" 
+                stroke="#65BEA4" 
+                stroke-width="7" 
+                d="
+                    M90.7312 35.9125 
+                    L90.7312 72.3687 
+                    L44.4212 40.9125 
+                    L44.4212 53.737 
+                    L90.7312 85.043 
+                    L90.7312 98.1725 
+                    L44.4212 67.2687 
+                    L44.4212 103.1725
+                "
+            />
+        </svg>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+        <!-- Logo link -->
+        <a href="https://nikolasicevic.com" class="logo">
+            <img src="img/logos/logo.svg" alt="Logo">
+        </a>
+
+        <!-- Hamburger bar -->
+        <input type="checkbox" id="menu-check">
+        <label id="burger" for="menu-check">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- Menu -->
+    </header>
+
+    <!-- Main content -->
     <main>
-        <h1>coming soon</h1>
-        <img src="img/logo_thick_stroke.svg" alt="Nikola Sicevic Logo">
+        
     </main>
+
+    <!-- Scripts -->
+
 </body>
 </html>
