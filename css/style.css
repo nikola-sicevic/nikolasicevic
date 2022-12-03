@@ -133,7 +133,7 @@ i{
 }
 
 .social a{
-    margin: 0 10px;
+    margin: 0 14px;
 
 }
 
@@ -160,6 +160,7 @@ section{
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+    transform: translateY(32px);
 }
 
 /* || LOADING PAGE */
@@ -307,10 +308,6 @@ header{
 }
 
 /* || LANDING PAGE */
-#landing{
-    transform: translateY(32px);
-}
-
 #landing .title{
     margin-bottom: 36px;
 }
