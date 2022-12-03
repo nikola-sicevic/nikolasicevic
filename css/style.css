@@ -97,6 +97,7 @@ i{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 .btn{
@@ -107,23 +108,31 @@ i{
     line-height: 16px;
 }
 
-.btn-transparent{
-    background-color: var(--green-darkest);
-    position: relative;
-    z-index: 1;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.btn:hover,
+.btn:focus{
+    transition: .3s;
 }
 
-.btn-transparent:before{
-    content: '';
-    position: absolute;
-    top: -3px;
-    right: -3px;
-    bottom: -3px;
-    left: -3px;
-    z-index: -1;
-    border-radius: 18px;
-    background: linear-gradient(to left top, var(--gray) 0%, var(--green-dark) 50%);
+.btn-green{
+    background-color: var(--green-darker);
+    border: 3px solid var(--green-darker);
+}
+
+.btn-green:hover,
+.btn-green:focus{
+    background-color: var(--green-dark);
+    border: 3px solid var(--green-dark);
+}
+
+.btn-transparent{
+    background-color: rgba(7, 13, 11, 0.25);
+    border: 3px solid var(--green-darker);
+}
+
+.btn-transparent:hover,
+.btn-transparent:focus{
+    background-color: rgba(64, 114, 95, 0.25);
+    border: 3px solid var(--green-darker);
 }
 
 .social{
