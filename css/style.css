@@ -103,7 +103,7 @@ i{
 
 .btn{
     box-sizing: border-box;
-    padding: 13px 31px !important;
+    padding: 13px 28px !important;
     border-radius: 15px;
     font-size: 16px !important;
     line-height: 16px;
@@ -172,6 +172,11 @@ i{
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+    background-image: url(../img/bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -150px;
+    background-position-y: 130px;
 }
 
 section{
