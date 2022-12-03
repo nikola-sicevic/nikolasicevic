@@ -162,9 +162,20 @@ i{
     z-index: 6;
 }
 
+.background{
+    height: calc(100vh - var(--url-bar-heigth));
+    position: fixed;
+    top: var(--url-bar-heigth);
+    width: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
 section{
     width: calc(100% - 52px);
-    height: 100vh;
     padding: 0 26px;
     display: flex;
     flex-wrap: wrap;
@@ -319,14 +330,17 @@ header{
 
 /* || LANDING PAGE */
 #landing .title{
-    margin-bottom: 36px;
+    margin-bottom: 24px;
 }
 
-#landing h1,
-#landing .small{
+#landing h1{
     margin-bottom: 18px;
 }
 
+#landing .small{
+    margin-bottom: 32px;
+}
+
 #landing .btn-group{
-    margin-bottom: 52px;
+    margin-bottom: 68px;
 }
