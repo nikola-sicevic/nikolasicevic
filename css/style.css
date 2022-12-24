@@ -16,6 +16,7 @@
     /* colors */
     --black: #000000;
     --black-light: #070d0b;
+    --black-transparent: rgba(7, 13, 11, 0.9);
     --white: #ffffff;
     --gray: #aebab6;
     --gray-darker: #787777;
@@ -143,6 +144,39 @@ i{
 
 .social a{
     margin: 0 14px;
+}
+
+.pill{
+    align-self: center;
+    width: 174px;
+    height: 36px;
+    padding: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    border: 1px solid var(--green-darker);
+    border-radius: 15px;
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.pill span{
+    z-index: 2;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pill .active{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(var(--green-darker), var(--black-transparent));
+    z-index: 1;
 }
 
 /* || LAYOUT */
