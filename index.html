@@ -23,13 +23,16 @@
     <!-- Link to CSS -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Add-ons -->
+    <script src="https://kit.fontawesome.com/ba1959104c.js" crossorigin="anonymous"></script>
+
     <!-- JS -->
     <script src="js/jquery.js"></script>
     <script src="js/app.js"></script>
 </head>
 <body>
     <!-- Loading screen -->
-    <div id="loading" class="full-screen">
+    <!-- <div id="loading" class="full-screen">
         <svg width="136" height="136" viewBox="0 0 136 136" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle 
                 class="loading-circle"
@@ -57,7 +60,7 @@
                 "
             />
         </svg>
-    </div>
+    </div> -->
 
     <!-- Navigation -->
     <header>
@@ -90,7 +93,54 @@
 
     <!-- Main content -->
     <main>
-        
+        <div class="background">
+            <!-- Landing section -->
+            <section id="landing">
+                <p class="title">Hi, I'm Nikola</p>
+                <h1>I'm a full-stack web developer</h1>
+                <p class="small">
+                    I talk to people who have an idea. I help them translate that idea
+                    into the language of requirements and features. Then we give that idea
+                    its virtual life.
+                </p>
+                <div class="btn-group">
+                    <a href="" class="btn btn-green">Contact Me</a>
+                    <a href="" class="btn btn-transparent">Download CV</a>
+                </div>
+                <div class="social">
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-regular fa-at"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-codepen"></i></a>
+                </div>
+            </section>
+
+            <!-- About me section -->
+            <section id="about">
+                <h2>About Me</h2>
+                <p>
+                    It all started way back in 2012. when I attended Web Development 
+                    & DB Programming courses in college. It continued with
+                    a couple of front-end online courses and my full-stack 
+                    starter kit was ready.
+                </p>
+                <p>
+                    So far, I worked in a big corporation, software 
+                    development company, two startups, a payment institution, 
+                    an outsourcing development company, and a marketing agency, 
+                    which allowed me to gain insight into many industries.
+                </p>
+                <p>
+                    Today, I use these insights to guide my clients 
+                    through the complex web app development journey - from the idea
+                    to satisfied users.
+                </p>
+                <div class="image">
+                    <div class="frame"></div>
+                    <img src="img/about_sm.jpeg" alt="Nikola Sicevic">
+                </div>
+            </section>
+        </div>
     </main>
 
     <!-- Scripts -->

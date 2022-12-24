@@ -18,11 +18,13 @@
     --black-light: #070d0b;
     --white: #ffffff;
     --gray: #aebab6;
+    --gray-darker: #787777;
     --green-darkest: #182a23;
     --green-darker: #40725f;
     --green-dark: #4a9881;
     --green-lighter: #65bea4;
     --green-light: #79ebc9;
+    --green-lightest: #bef9d5;
     /* fonts */
     --poppins: "Poppins", Arial, Helvetica, sans-serif;
     --questrial: "Questrial", Arial, Helvetica, sans-serif;
@@ -30,14 +32,21 @@
     --url-bar-heigth: -32px;
 }
 
+/* || RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
 /* || GLOBAL STYLES */
 
 body{
-    margin: 0;
-    padding: 0;
     position: relative;
     background-color: var(--black-light);
     font-family: var(--questrial);
+    color: var(--white);
 }
 
 a{
@@ -46,43 +55,105 @@ a{
 }
 
 ul{
-    margin: 0;
-    padding: 0;
     list-style-type: none;
+}
+
+h1{
+    font-size: 32px;
+}
+
+h2{
+    font-size: 28px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+i{
+    color: white;
+    font-size: 24px;
+}
+
+.title{
+    font-family: var(--poppins);
+    font-size: 36px;
+}
+
+.small{
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.medium{
+    font-size: 14px;
+}
+
+.large{
+    font-size: 16px;
+}
+
+.btn-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .btn{
     box-sizing: border-box;
-    padding: 13px 31px !important;
+    padding: 13px 28px !important;
     border-radius: 15px;
     font-size: 16px !important;
     line-height: 16px;
 }
 
-.btn-transparent{
-    background-color: var(--green-darkest);
-    position: relative;
-    z-index: 1;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.btn:hover,
+.btn:focus{
+    transition: .3s;
 }
 
-.btn-transparent:before{
-    content: '';
-    position: absolute;
-    top: -3px;
-    right: -3px;
-    bottom: -3px;
-    left: -3px;
-    z-index: -1;
-    border-radius: 18px;
-    background: linear-gradient(to left top, var(--gray) 0%, var(--green-dark) 50%);
+.btn-green{
+    background-color: var(--green-darker);
+    border: 3px solid var(--green-darker);
+}
+
+.btn-green:hover,
+.btn-green:focus{
+    background-color: var(--green-dark);
+    border: 3px solid var(--green-dark);
+}
+
+.btn-transparent{
+    background-color: rgba(7, 13, 11, 0.25);
+    border: 3px solid var(--green-darker);
+}
+
+.btn-transparent:hover,
+.btn-transparent:focus{
+    background-color: rgba(64, 114, 95, 0.25);
+    border: 3px solid var(--green-darker);
+}
+
+.social{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.social a{
+    margin: 0 14px;
 }
 
 /* || LAYOUT */
 
+main,
 .full-screen{
     width: 100%;
     height: 100vh;
+}
+
+.full-screen{
     position: fixed;
     top: 0;
     left: 0;
@@ -93,7 +164,32 @@ ul{
     z-index: 6;
 }
 
-/* || LOADING PAGE */
+.background{
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(../img/bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -150px;
+    background-position-y: 130px;
+}
+
+section{
+    width: calc(100% - 52px);
+    height: calc(100vh - var(--url-bar-heigth));
+    padding: 0 26px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* || LOADING */
 
 #loading{
     animation-name: removeLoadingScreen;
@@ -235,4 +331,73 @@ header{
 
 #menu ul li:not(:last-child) a{
     display: block;
+}
+
+/* || LANDING SECTION */
+
+#landing .title{
+    margin-bottom: 24px;
+}
+
+#landing h1{
+    margin-bottom: 18px;
+}
+
+#landing .small{
+    margin-bottom: 32px;
+}
+
+#landing .btn-group{
+    margin-bottom: 68px;
+}
+
+/* || ABOUT SECTION */
+
+#about h2{
+    margin: 72px 0 32px 0;
+}
+
+#about p{
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+#about .image{
+    align-self: center;
+    width: 119px;
+    height: 179px;
+    position: relative;
+    margin-top: 16px;
+}
+
+#about .image .frame,
+#about .image img {
+    position: absolute;
+}
+
+#about .image .frame{
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    z-index: 1;
+    top: 0;
+    right: 0;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(
+        135deg,  
+        var(--green-darker), 
+        var(--green-lightest), 
+        var(--gray-darker)
+    );
+}
+
+#about .image img {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    top: 10px;
+    right: 10px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 }
