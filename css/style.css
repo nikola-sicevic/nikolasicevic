@@ -445,6 +445,7 @@ header{
 #work .cards-wrapper{
     width: 100%;
     overflow-x: hidden;
+    box-shadow: inset 0 0 10px var(--black-light);
 }
 
 #work .cards-wrapper .card {
@@ -486,10 +487,6 @@ header{
 #work .cards-wrapper .card .content a{
     margin: 3px 0;
     color: var(--green-lighter);
-}
-
-#work .cards-wrapper .card .content a:hover,
-#work .cards-wrapper .card .content a:focus {
     text-decoration: underline;
 }
 
