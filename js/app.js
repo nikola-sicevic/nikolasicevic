@@ -45,4 +45,20 @@ $(document).ready(function () {
       toggleActivePill(static);
     }
   });
+
+  let wrapper = $("#wrapper");
+  let background = $("#background");
+
+  // Make background darker as user starts scrolling
+  wrapper.on("scroll", function () {
+    const top = $(this).scrollTop();
+
+    if (top > 0 && top < 400) {
+      let opacity = top / 100 / 4;
+
+      if (opacity <= 0.7) {
+        background.css("background-color", "rgba(0, 0, 0, " + opacity + ")");
+      }
+    }
+  });
 });

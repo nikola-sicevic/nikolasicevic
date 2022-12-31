@@ -164,6 +164,10 @@ main,
     height: 100vh;
 }
 
+main {
+    position: relative;
+}
+
 .full-screen{
     position: fixed;
     top: 0;
@@ -184,10 +188,21 @@ main,
     flex-wrap: wrap;
     justify-content: center;
     background-image: url(../img/bg.svg);
+    background-color: rgba(0, 0, 0, 0);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: -150px;
     background-position-y: 130px;
+    background-blend-mode: darken;
+}
+
+.wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
 }
 
 section{
@@ -198,6 +213,7 @@ section{
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+    color: white;
 }
 
 /* || LOADING */
@@ -410,7 +426,6 @@ header{
 /* || WORK SECTION */
 
 #work {
-    box-shadow: inset 0 0 10px var(--black-light);
     overflow: hidden;
 }
 
