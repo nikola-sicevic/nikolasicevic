@@ -6,6 +6,11 @@ const sliderAnimateOptions = {
   staticRight: "50%",
 };
 
+const backroundOpacityParams = {
+  start: 50,
+  end: 450,
+};
+
 function toggleSlider(slider) {
   let currentPos = parseInt(slider.css("left"));
 
@@ -53,12 +58,25 @@ $(document).ready(function () {
   wrapper.on("scroll", function () {
     const top = $(this).scrollTop();
 
-    if (top > 0 && top < 400) {
-      let opacity = top / 100 / 4;
+    if (
+      top > backroundOpacityParams.start &&
+      top < backroundOpacityParams.end
+    ) {
+      let opacity = top / backroundOpacityParams.end;
 
       if (opacity <= 0.7) {
         background.css("background-color", "rgba(0, 0, 0, " + opacity + ")");
       }
     }
+  });
+
+  // Slide one card left on swipe
+  $("#cards-box").on("swipeleft", function () {
+    console.log("swiped left");
+  });
+
+  // Slide one card right on swipe
+  $("#cards-box").on("swiperight", function () {
+    console.log("swiped right");
   });
 });

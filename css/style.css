@@ -472,6 +472,7 @@ header{
     width: 100%;
     overflow: hidden;
     position: relative;
+    touch-action: none;
 }
 
 #work .cards-box:before,
@@ -536,7 +537,7 @@ header{
 
 #work .cards-box .cards-wrapper .card .company-logo img {
     width: 80%;
-    opacity: 0.55;
+    opacity: 0.35;
 }
 
 #work .cards-box .cards-wrapper .card .content{
