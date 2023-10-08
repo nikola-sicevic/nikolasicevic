@@ -69,14 +69,4 @@ $(document).ready(function () {
       }
     }
   });
-
-  // Slide one card left on swipe
-  $("#cards-box").on("swipeleft", function () {
-    console.log("swiped left");
-  });
-
-  // Slide one card right on swipe
-  $("#cards-box").on("swiperight", function () {
-    console.log("swiped right");
-  });
 });

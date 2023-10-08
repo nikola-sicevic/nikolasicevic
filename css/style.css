@@ -30,7 +30,7 @@
     --poppins: "Poppins", Arial, Helvetica, sans-serif;
     --questrial: "Questrial", Arial, Helvetica, sans-serif;
     /* units */
-    --url-bar-heigth: -32px;
+    --url-bar-heigth: 60px;
 }
 
 /* || UTILITIES */
@@ -208,6 +208,7 @@ main {
 section{
     width: calc(100% - 52px);
     height: calc(100vh - var(--url-bar-heigth));
+    margin-top: var(--url-bar-heigth);
     padding: 0 26px;
     display: flex;
     flex-wrap: wrap;
@@ -381,7 +382,7 @@ header{
 /* || ABOUT SECTION */
 
 #about h2{
-    margin: 72px 0 32px 0;
+    margin: 0 0 32px 0;
 }
 
 #about p{
