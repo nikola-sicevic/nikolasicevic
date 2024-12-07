@@ -107,7 +107,6 @@ i{
 .btn-group{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -150,11 +149,11 @@ i{
 .social{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
 }
 
 .social a{
-    margin: 0 14px;
+    margin: 0 10px;
 }
 
 /* || LAYOUT */
@@ -359,22 +358,21 @@ header{
 
 /* || LANDING SECTION */
 
-#landing .title{
-    font-size: 32px;
-    margin-bottom: 24px;
-}
-
 #landing h1{
+    font-size: 28px;
+    line-height: 1.2;
     margin-bottom: 18px;
 }
 
 #landing p{
     font-size: 16px;
-    margin-bottom: 32px;
+    margin-bottom: 35px;
+    line-height: 1.2;
 }
 
 #landing .btn-group{
-    margin-bottom: 68px;
+    margin-bottom: 35px;
+    gap: 12px;
 }
 
 /* || ABOUT SECTION */
