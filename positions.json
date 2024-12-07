@@ -1,0 +1,141 @@
+{
+    "positions": [
+        {
+            "name": "Senior Full-Stack Web Developer",
+            "company": {
+                "name": "OIP Robotics",
+                "website": "https://oiprobotics.com/",
+                "logo": "oip_robotics.svg"
+            },
+            "start_date": "November 2023",
+            "end_date": "present",
+            "responsibilities": [
+                ""
+            ]
+        },
+        {
+            "name": "Full-Stack Web Developer",
+            "company": {
+                "name": "Qwertify",
+                "website": "https://qwertify.io/",
+                "logo": "qwertify.webp"
+            },
+            "start_date": "October 2021",
+            "end_date": "Jun 2023",
+            "responsibilities": [
+                "Designed and programmed DBs for diverse web applications",
+                "Spearheaded the development of vital API functionalities fueling both web and mobile app experiences",
+                "Engineered captivating user interfaces",
+                "Managed client relationships through proactive communication, ensuring alignment on app features, performance, and advancement"
+            ]
+        },
+        {
+            "name": "CTO & Full-Stack Web Developer",
+            "company": {
+                "name": "ZenHire",
+                "website": "https://zenhire.ai/",
+                "logo": "zen.webp"
+            },
+            "start_date": "March 2021",
+            "end_date": "December 2021",
+            "responsibilities": [
+                "Set the strategic technical trajectory for product development",
+                "Nurtured ongoing projects to fruition, blending technical acumen with effective project management",
+                "Participated in high-impact fund-raising events",
+                "Organized and oversaw the end-to-end development process, ensuring alignment with goals and fostering cross-functional collaboration",
+                "Assessed and interviewed potential candidates for the web developer position"
+            ]
+        },
+        {
+            "name": "Full-Stack Web Developer",
+            "company": {
+                "name": "Threedium",
+                "website": "https://threedium.io/",
+                "logo": "threedium.png"
+            },
+            "start_date": "October 2019",
+            "end_date": "May 2020",
+            "responsibilities": [
+                "Crafted captivating user interfaces",
+                "Orchestrated the creation and implementation of intricate database systems",
+                "Engineered API functionalities that seamlessly integrate with the web application",
+                "Harmonized platform assets with client software, ensuring a cohesive and engaging end-user experience"
+            ]
+        },
+        {
+            "name": "Computer Science teacher",
+            "company": {
+                "name": "Elementary School Pavle Savic",
+                "website": "https://ospavlesavic.edu.rs/",
+                "logo": ""
+            },
+            "start_date": "Septebmer 2019",
+            "end_date": "February 2020",
+            "responsibilities": [
+                "Planned, organized, and delivered comprehensive computer science classes, fostering an engaging learning environment for students"
+            ]
+        },
+        {
+            "name": "Full-Stack Web Developer",
+            "company": {
+                "name": "OIP",
+                "website": "https://www.oipteam.com/",
+                "logo": "oip.svg"
+            },
+            "start_date": "June 2017",
+            "end_date": "June 2019",
+            "responsibilities": [
+                "Conceptualized and executed feature enhancements for ongoing projects",
+                "Orchestrated and oversaw the end-to-end development lifecycle",
+                "Fostered collaborative relationships with department heads to gather and refine requirements",
+                "Formulated long-term strategies for the newly created Web Development department to guide growth and evolution",
+                "Delivered consultative services to clients"
+            ]
+        },
+        {
+            "name": "Head of IT Department",
+            "company": {
+                "name": "Transaks",
+                "website": "https://transaks.rs/",
+                "logo": "transaks.svg"
+            },
+            "start_date": "June 2016",
+            "end_date": "December 2016",
+            "responsibilities": [
+                "Spearheaded negotiations with suppliers, to optimize partnerships with IT suppliers",
+                "Strategically projected, executed, and maintained the company's integral IT infrastructure, ensuring seamless operations",
+                "Conducted IT training for employees",
+                "Configured and maintained AssePI payment processing software",
+                "Generated and submitted quarterly transaction reports to the National Bank of Serbia"
+            ]
+        },
+        {
+            "name": "Full-Stack Web Developer",
+            "company": {
+                "name": "Apagama",
+                "website": "",
+                "logo": ""
+            },
+            "start_date": "July 2014",
+            "end_date": "January 2015",
+            "responsibilities": [
+                "Crafted captivating user interfaces",
+                "Architected and programmed databases",
+                "Developed essential API features, all integrated into the web application"
+            ]
+        },
+        {
+            "name": "Junior Full-Stack Web Developer",
+            "company": {
+                "name": "BEAM Marketing Agency",
+                "website": "",
+                "logo": ""
+            },
+            "start_date": "February 2014",
+            "end_date": "July 2014",
+            "responsibilities": [
+                "Collaborated in the development of web applications across diverse industries"
+            ]
+        }
+    ]
+}

@@ -112,6 +112,7 @@ i{
 }
 
 .btn{
+    display: block;
     box-sizing: border-box;
     padding: 13px 28px !important;
     border-radius: 15px;
@@ -227,10 +228,6 @@ section{
     animation-timing-function: ease-in-out;
 }
 
-#loading svg{
-    transform: translateY(var(--url-bar-heigth));
-}
-
 @keyframes removeLoadingScreen {
     to {
         left: 100%;
@@ -342,7 +339,6 @@ header{
 }
 
 #menu ul{
-    transform: translateY(var(--url-bar-heigth));
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -364,6 +360,7 @@ header{
 /* || LANDING SECTION */
 
 #landing .title{
+    font-size: 32px;
     margin-bottom: 24px;
 }
 
@@ -371,7 +368,8 @@ header{
     margin-bottom: 18px;
 }
 
-#landing .small{
+#landing p{
+    font-size: 16px;
     margin-bottom: 32px;
 }
 
@@ -471,28 +469,14 @@ header{
 
 #work .cards-box {
     width: 100%;
-    overflow: hidden;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     position: relative;
-    touch-action: none;
 }
 
-#work .cards-box:before,
-#work .cards-box:after {
-    content: " ";
-    height: 100%;
-    position: absolute;
-    top: 0;
-    width: 0px;
-}
-
-#work .cards-box:before {
-    box-shadow: 0 0 30px 25px var(--black);
-    left: 0;
-}
-
-#work .cards-box:after {
-    box-shadow: 0 0 30px 25px var(--black);
-    right: 0;
+#work .cards-box::-webkit-scrollbar {
+    display: none;
 }
 
 #work .cards-box .cards-wrapper{
